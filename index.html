@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>ROCK <br />PAPER<br />SCISSORS</h1>
+        <section class="scoreboard">
+          <div class="score-box">
+            <span>COMPUTER<br>SCORE</span>
+            <div id="computer-score">0</div>
+          </div>
+          <div class="score-box">
+            <span>YOUR<br>SCORE</span>
+            <div id="user-score">0</div>
+          </div>
+        </section>
+      </header>
+      <section class="game-area">
+        <div class="choices">
+          <svg class="choices-lines" width="320" height="260" aria-hidden="true" focusable="false">
+            <line x1="52" y1="82" x2="265" y2="82" />
+            <line x1="52" y1="82" x2="160" y2="230" />
+            <line x1="265" y1="82" x2="160" y2="230" />
+          </svg>
+
+          <button class="choice rock" style="left: 0px; top: 30px;">
+            <img src="icons8-fist-67 1.png" alt="Rock" />
+          </button>
+          <button class="choice scissors" style="left: 205px; top: 30px;">
+            <img src="17911 1.png" alt="Scissors" />
+          </button>
+          <button class="choice paper" style="left: 102px; top: 175px;">
+            <img src="icons8-hand-64 1.png" alt="Paper" />
+          </button>
+        </div>
+        <div id="rules-card">
+          <div class="rules-header">
+            <h2>Game Rules</h2>
+            <button type="button" class="close-btn">✕</button>
+          </div>
+          <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+            <li>If both players lay down the same hand, each player lays down another hand.</li>
+          </ul>
+        </div>
+      </section>
+      <button class="rules-btn">RULES</button>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
