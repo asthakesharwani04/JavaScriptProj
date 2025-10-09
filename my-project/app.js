@@ -313,3 +313,19 @@ renderScore();
 
 // By default, show rules card on home page
 rulesCard.style.display = 'block';
+
+document.addEventListener('click', function(e) {
+    if (e.target.closest('.choice')) {
+      const btn = e.target.closest('.choice');
+      const userPick = btn.classList.contains('rock') ? 'rock' :
+                       btn.classList.contains('paper') ? 'paper' : 'scissors';
+      const computerPick = getComputerChoice();
+      const result = getResult(userPick, computerPick);
+  
+      if (result === 'win') userScore++;
+      else if (result === 'loss') computerScore++;
+  
+      renderScore();
+      renderResultScreen(userPick, computerPick, result);
+    }
+  });
