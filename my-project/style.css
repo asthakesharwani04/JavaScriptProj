@@ -490,6 +490,31 @@ body {
   transform: scale(1.05);
 }
 
+/* .turn-counter {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.9;
+} */
+
+
+.final-score {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+
+/* .lost-icon,
+.tie-icon {
+  font-size: 8rem;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  margin-bottom: 1rem;
+} */
+
 /* Responsive Styles */
 @media (max-width: 900px) {
   .header {
